@@ -53,7 +53,3 @@ webUI:
     label: "Pritunl"
     login: "[ADMIN_EMAIL]"
     password: "[ADMIN_PASSWORD]"
-  - url: "https://[CI_CD_DOMAIN]"
-    label: "mongo-express Web UI"
-    login: "admin"
-    password: "[ADMIN_PASSWORD]"
