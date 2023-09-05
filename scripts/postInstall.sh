@@ -8,7 +8,6 @@ echo $credentials > $log_file
 
 log_message=$(cat "$log_file")
 
-# Extract the random password and store it in a separate file
 password=$(echo "$log_message" | grep -oP 'password: "\K[^"]+')
 echo "$password" > pritunl_password.txt
 
