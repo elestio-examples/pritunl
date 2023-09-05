@@ -5,6 +5,13 @@ sed -i "s/INSTANCE_DOMAIN/$DOMAIN/g" ./scripts/mongo_setup.sh
 
 sed -i "s/ADMIN_PASSWORD/$ADMIN_PASSWORD/g" ./scripts/mongo_setup.sh
 
+NODE_ID=$(tr -dc '[:lower:][:digit:]' < /dev/urandom | head -c 24; echo)
+
+cat << EOT >> ./.env
+
+NODE_ID=${NODE_ID}
+EOT
+
 #create key file (for cluster and single node cluster)
 echo "Create Key file"
 mkdir -p ./auth;
@@ -22,11 +29,5 @@ docker-compose up mongosetup;
 
 echo "Waiting ...";
 
-NODE_ID=$(tr -dc '[:lower:][:digit:]' < /dev/urandom | head -c 24; echo)
-
-cat << EOT >> ./.env
-
-NODE_ID=${NODE_ID}
-EOT
 
 sleep 150s;
