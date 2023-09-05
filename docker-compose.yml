@@ -8,7 +8,9 @@ services:
       - 172.17.0.1:4767:80
       - 172.17.0.1:4867:443
       - 172.17.0.1:4967:1194
-    # volumes:
+    volumes:
+      - "./data/pritunl:/var/lib/pritunl"
+      - "./data/mongodb:/var/lib/mongodb"
+      - /root/.acme.sh/vm.elestio.app/fullchain.cer:/var/lib/pritunl/server.cert
+      - /root/.acme.sh/vm.elestio.app/vm.elestio.app.key:/var/lib/pritunl/server.key
     #   - "./data/pritunl.conf:/etc/pritunl.conf"
-    #   - "./data/pritunl:/var/lib/pritunl"
-    #   - "./data/mongodb:/var/lib/mongodb"
