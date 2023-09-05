@@ -14,3 +14,4 @@ echo "$password" > pritunl_password.txt
 sed -i 's/^ADMIN_PASSWORD=.*/ADMIN_PASSWORD='"$password"'/' ".env"
 
 cat pritunl_password.txt
+rm $log_file
