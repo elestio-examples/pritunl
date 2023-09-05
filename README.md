@@ -1,8 +1,8 @@
-# Pritunl Zero CI/CD pipeline
+# Pritunl CI/CD pipeline
 
-<a href="https://dash.elest.io/deploy?source=cicd&social=dockerCompose&url=https://github.com/elestio-examples/pritunl-zero"><img src="deploy-on-elestio.png" alt="Deploy on Elest.io" width="180px" /></a>
+<a href="https://dash.elest.io/deploy?source=cicd&social=dockerCompose&url=https://github.com/elestio-examples/pritunl"><img src="deploy-on-elestio.png" alt="Deploy on Elest.io" width="180px" /></a>
 
-Deploy Pritunl Zero server with CI/CD on Elestio
+Deploy Pritunl server with CI/CD on Elestio
 
 <img src="pritunl.png" style='width: 100%;'/>
 <br/>
@@ -10,7 +10,7 @@ Deploy Pritunl Zero server with CI/CD on Elestio
 
 # Once deployed ...
 
-You can open Pritunl Zero ADMIN UI here:
+You can open Pritunl ADMIN UI here:
 
     URL: https://[CI_CD_DOMAIN]
     email: [ADMIN_EMAIL]
