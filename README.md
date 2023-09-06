@@ -13,11 +13,13 @@ Deploy Pritunl server with CI/CD on Elestio
 You can open Pritunl ADMIN UI here:
 
     URL: https://[CI_CD_DOMAIN]
-    email: [ADMIN_EMAIL]
+    email: pritunl
     password: [ADMIN_PASSWORD]
 
-You can also connect to mongodb through mongo-express Web UI:
+# Important
 
-    https://[CI_CD_DOMAIN]:6443/
-    Login: admin
-    Password: [ADMIN_PASSWORD]
+When you first log in, a pop-up will appear with a few inputs. Just click on save without changing anything.
+
+# Server
+
+To use Pritunl correctly, when you create a server, use port `1194`.
