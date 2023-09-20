@@ -1,0 +1,24 @@
+version: '3.3'
+services:
+  mongo:
+    container_name: mongo
+    image: mongo:3.2
+    ports:
+      - " 172.17.0.1:27017:27017"
+    restart: always
+    volumes:
+      - /opt/mongo/data:/data/db
+  pritunl:
+    container_name: pritunl
+    build: .
+    image: elestio4test/pritnul:${SOFTWARE_VERSION_TAG}
+    depends_on:
+      - mongo
+    networks:
+      - pritunl
+    ports:
+      - " 172.17.0.1:80:80"
+      - " 172.17.0.1:443:443"
+      - " 172.17.0.1:1194:1194/udp"
+    privileged: true
+    restart: always
