@@ -12,7 +12,7 @@ A better community platform for the modern web.
 
 [Pritunl](https://github.com/pritunl/pritunl)Enterprise VPN Server,.
 
-<img src="https://github.com/elestio-examples/pritunl/raw/main/pritnul.png" alt="Pritnul" width="800">
+<img src="https://github.com/elestio-examples/pritunl/raw/main/pritunl.png" alt="Pritnul" width="800">
 
 Deploy a <a target="_blank" href="https://elest.io/open-source/pritunl">fully managed Pritunl</a> on <a target="_blank" href="https://elest.io/">elest.io</a> Enterprise VPN Server,
 
